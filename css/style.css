@@ -1,0 +1,303 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*reset*/
+
+body {
+    background: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%)
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 48px;
+    line-height: 82px;
+    letter-spacing: 8.75px;
+    margin: 48px 0 26px 0;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.newRow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.new {
+    width: 500px;
+    height: 48px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 0 24px;
+    font-size: 16px;
+    color: rgb(77, 77, 77);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+input::-webkit-input-placeholder {
+    color: #aab2bd;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.add {
+    font-size: 32px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.listRow {
+    margin: 8px 0 92px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.complete {
+    color: #9F9A91;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 8px 0;
+    cursor: pointer;
+}
+
+.complete li {
+    font-size: 14px;
+    letter-spacing: 0.62px;
+    padding: 16px 63px;
+    border-bottom: 2px solid #EFEFEF;
+}
+
+.complete .btnActive {
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid #333;
+}
+
+.list li {
+    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0.62px;
+}
+
+.checkbox {
+    width: 100%;
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    cursor: pointer;
+    /* font-size: 14px;
+    width: 15px;
+    height: 12px; */
+    position: relative;
+    margin: 16px 16px 16px 0;
+}
+
+input[type=checkbox]:after {
+    position: absolute;
+    content: " ";
+    background-color: rgb(255, 255, 255);
+    color: #FFD370;
+    border-radius: 2px;
+}
+
+input[type=checkbox]:checked:after {
+    width: 20px;
+    height: 20px;
+    content: "✓";
+    font-size: 24px;
+    top: -5px;
+    left: -4px;
+    padding: 0px 0 5px 5px;
+}
+
+.list .checkboxActive {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.del {
+    display: inline;
+    max-width: 16px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.list .delNone {
+    display: none;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary li {
+    padding: 24px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: 20px;
+}
+
+.clearAll {
+    color: #9F9A91;
+    cursor: pointer;
+}
